@@ -4,7 +4,7 @@
   "title": "Upload-Post",
   "description": "Publish and schedule videos, photos and text posts to TikTok, Instagram, YouTube, LinkedIn, X and more social networks with Upload-Post",
   "icon": "extension-icon.png",
-  "author": "upload-post",
+  "author": "juan_carlos_cavero_gracia",
   "license": "MIT",
   "categories": [
     "Productivity",
@@ -123,7 +123,7 @@
     "instructions": "- Always call get-profiles before create-post to find the profile username and the platforms connected to it. Only publish to platforms that are connected to that profile.\n- If the user has a single profile, use it without asking. If there are several and the user did not name one, ask which profile to use.\n- The X (Twitter) platform is called \"x\". Reddit is not available.\n- Text posts support: x, linkedin, facebook, threads, bluesky, discord, telegram, google_business, slack, mastodon, nostr, lemmy, devto, hashnode, wordpress, whop, listmonk. Photo posts support: tiktok, instagram, linkedin, facebook, x, threads, pinterest, bluesky, discord, telegram, google_business, mastodon, lemmy, wordpress. Video posts support: tiktok, instagram, youtube, linkedin, facebook, x, threads, pinterest, bluesky, discord, telegram, google_business, mastodon, wordpress. Instagram, TikTok and YouTube need a photo or a video.\n- YouTube requires a title.\n- Scheduled dates must be in the future and at most 365 days ahead. Send them in ISO-8601 with an explicit offset (for example 2026-10-01T09:00:00+02:00) or send a timezone.\n- Never combine scheduledDate and addToQueue.\n- After publishing, report the request_id or job_id to the user. Use get-upload-status to check the result and share the post URLs.\n- Before cancelling, use get-scheduled-posts to find the right job_id.",
     "evals": [
       {
-        "input": "@upload-post post \"We just shipped dark mode 🌙\" on X and LinkedIn",
+        "input": "@upload-post post \"We just shipped dark mode \ud83c\udf19\" on X and LinkedIn",
         "mocks": {
           "get-profiles": [
             {
